@@ -163,14 +163,18 @@ button a {
     flex-wrap: wrap;
     justify-content: center;
 }
-.cta-title{
+.cta-title,
+.prod-title{
     font-family: var(--font);
     font-weight: 800;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
 .cta-card img{
     width: 30px;
+}
+.cta-card h3{
+    color: var(--text-gray);
 }
 .cta-card{
     width: 200px;
@@ -187,8 +191,112 @@ button a {
     background-color: var(--nav-logo);
 }
 .cta-card p{
-    color: var(--#262620);
+    color: var(--text-gray);
 }
 span{
     font-weight: 800;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px px;
+    padding-top: 100px;
+    gap: 40px;
+    background-color: var(--bg-hero);
+    
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    
+
+}
+.bnt-category{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 40px;
+    align-items: center;
+}
+.active{
+    background-color: var(--primary);
+}
+.prod-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.prod-gral{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font);
+    color: var(--bg-hero);
+    align-items: center;
+    font-size: 20px;
+}
+.prod-img{
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+.prod-card{
+    padding: 20px 15px;
+    border-radius: 1rem;
+    background-color: var(--nav-logo);
+    display: flex;
+    font-size: 16px;
+    width: 450px;
+    height: 307.26px;
+    gap: 5px;
+}
+.prod-info{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    font-family: var(--font);
+}
+.first-line{
+    font-weight: 800;
+    color: var(--text-gray);
+}
+.btn-container{
+    gap: 5px;
+}
+.prod-btn{
+    font-size: 12px;
+    padding: 10px 20px;
+    border: 1px solid var(--text);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.buy{
+    background-color: var(--text);
+    color: var(--bg-hero)
+}
+.more{
+    display: inline-block;
+    padding-bottom: 30px;
+    color: var(--text);
+    font-family: var(--font);
+    text-decoration: underline;
+}
+footer{
+    background-color: var(--bg-hero);
+    color: var(--text);
+    font-family: var(--font);
+    display: flex;
+    padding: 80px 0px;
+    justify-content: space-evenly;
+    font-weight: 200;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
 }
