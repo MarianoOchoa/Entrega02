@@ -44,7 +44,7 @@ header{
     align-items: center;
     width: 100%;
     background-color: var(--nav-logo);
-    
+    position: fixed;
 
 }
 .logo{
@@ -85,7 +85,7 @@ nav{
     font-weight: 800;
 }
 
-.hero{
+#hero{
     height: 92vh;
     background-color: #d3d3d3;
     padding-left: 13%;
@@ -137,7 +137,7 @@ button a {
     padding: 6px;
     border-radius: 1rem;
 }
-main{
+#info{
     font-family: var(--font);
     display: flex;
     flex-direction: column;
@@ -145,5 +145,50 @@ main{
     text-align: center;
     gap: 30px;
     background-color: var(--bg-hero);
-    padding: 50px 50px;
+    padding: 50px 300px;
+}
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 300px;
+    padding-top: 100px;
+    gap: 40px;
+    background-color: var(--bg-hero);
+}
+.cta-card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cta-title{
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+}
+.cta-card img{
+    width: 30px;
+}
+.cta-card{
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-family:var(--font) ;
+    font-size: 12px;
+    background-color: var(--nav-logo);
+}
+.cta-card p{
+    color: var(--#262620);
+}
+span{
+    font-weight: 800;
 }
