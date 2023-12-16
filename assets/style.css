@@ -34,7 +34,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    
+    scroll-behavior: smooth;
 }
 main{
     background-color: var(--bg-hero);
