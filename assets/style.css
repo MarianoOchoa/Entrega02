@@ -36,8 +36,12 @@
     list-style-type: none;
     
 }
+main{
+    background-color: var(--bg-hero);
+}
 
 header{
+    top: 0;
     height: 8vh;
     display: flex;
     justify-content: space-between;
@@ -46,6 +50,18 @@ header{
     background-color: var(--nav-logo);
     position: fixed;
 
+}
+
+.hmb-menu{
+    display: none;
+    box-shadow: 0px 8px 40px rgba(0,0,0,0.4);
+}
+.navbar i{
+    font-size: 20px;
+    display: none;
+}
+#toggle-menu{
+    display: none;
 }
 .logo{
     width: 40px;
@@ -147,14 +163,15 @@ button a {
     background-color: var(--bg-hero);
     padding: 50px 300px;
 }
-.call-to-action{
+#call-to-action{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 300px;
+    padding: 50px ;
     padding-top: 100px;
     gap: 40px;
     background-color: var(--bg-hero);
+    
 }
 .cta-card-container{
     display: flex;
@@ -196,7 +213,7 @@ button a {
 span{
     font-weight: 800;
 }
-.products{
+#products{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,6 +240,12 @@ span{
 }
 .active{
     background-color: var(--primary);
+}
+.prod-container-tablet{
+    display: none;
+}
+.SL{
+    display: none;
 }
 .prod-container{
     display: flex;
@@ -299,4 +322,211 @@ footer{
     display: flex;
     justify-content: space-around;
     gap: 20px;
+}
+
+
+/*pc*/
+@media (max-width: 1200px){
+
+}
+/*tablet*/
+@media (max-width:992px){
+    header{
+        padding: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+    }
+    .nav__UL{
+        padding: 0;
+    }
+    .carrito{
+        display: none;
+    }
+    #hero{
+        flex-direction:column-reverse;
+        position: relative;
+        top: 0;
+        z-index: 1;
+        padding: 0;
+        height: 95vh;
+    }
+    .hero-img{
+        padding-top: 50px;
+    }
+    .hero-text{
+        display: flex;
+        position: relative;
+        top: -50px;
+    }
+    #info{
+        padding: 100px 20px 50px 20px;
+    }
+    .call-to-action{
+        padding: 50px 10px;
+    }
+    .prod-container{
+        display: none;
+    }
+    .prod-container-tablet{
+        display: flex;
+        gap: 50px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .FL{
+        display: flex;
+        gap: 20px;
+    }
+    .SL{
+        display: flex;
+        gap: 20px;
+    }
+    .prod-card{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+    }
+    .cta-title{
+        padding: 0px 50px 0px 50px;
+        font-size: 27px;
+    }
+    .cta-card-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .cta-card{
+        width: 75vw;
+    }
+    .cta-card img{
+        width: 50px;
+    }
+    .cta-card h3{
+        font-size: 20px;
+    }
+    .cta-card p{
+        font-size: 14px;
+    }
+    .medio h3{
+        font-size: 18px;
+    }
+    .medio p{
+        font-size: 13px;
+    }
+}
+/*celu grande */
+@media (max-width: 600px){
+    .header{
+        display: none;
+    }
+    .carrito{
+        display: none;
+    }
+    .hmb-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .nav__UL{
+        background-color: var(--nav-logo);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 40px);
+        position: absolute;
+        left: 0;
+        top: 40px;
+        justify-content: space-around;
+        align-items: center;
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    .navbar i {
+        display: block;
+    }
+    #toggle-menu:checked ~ .nav__UL{
+        display: flex;
+    }
+    
+    .FL{
+        gap: 5px;
+        padding-bottom: 0;
+    }
+    .SL{
+        gap: 5px;
+    }
+}
+
+/*celu chico*/
+@media (max-width:530px){
+    main{
+        width:100%;
+    }
+    .hmb-menu{
+        width: 100%;
+    }
+    .hero-img{
+        padding-top: 80px;
+    }
+    .hero-text p{
+        display: none;
+    }
+    .prod-container-tablet{
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #products{
+        gap:0;
+    }
+    .prod-title{
+        margin:0px 5px 30px 5px;
+        font-size: 20px;
+    }
+    .prod-container{
+        gap: 0;
+        padding: 0;
+    }
+    .prod-card{
+        gap: 0;
+        padding: 0;
+    }
+    .btn-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .FL{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .SL{
+        padding-bottom: 80px;
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+/*XXS*/
+@media (max-width:500px){
+    .hmb-menu{
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .btn-container{
+        display: flex;
+        flex-direction:column;
+    }
+    .prod-info{
+        gap: 10px;
+    }
 }

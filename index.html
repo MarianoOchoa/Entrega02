@@ -6,22 +6,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <title>Entregas Mariano Ochoa</title>
 </head>
 <body>
-    <header>
+    <header class="hmb-menu">
         <img class="logo" src="assets/fotos/logo-west.png" alt="">
-        <nav>
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars-staggered"></i></label>
+            <input type="checkbox"  id="toggle-menu">
             <ul class="nav__UL">
-                <li class="nav__link"><a href="index.html"><span>Home</span></a></li>
-                <li class="nav__link"><a href="assets/Productos.html">Productos</a></li>
-                <li class="nav__link"><a href="assets/nosotros.html">Nosotros</a></li>
-                <li class="nav__link"><a href="assets/contacto.html">Contacto</a></li>
+                <li class="nav__link"><a href="#hero"><span>Home</span></a></li>
+                <li class="nav__link"><a href="#info">Nosotros</a></li>
+                <li class="nav__link"><a href="#call-to-action">Conocenos</a></li>
+                <li class="nav__link"><a href="#products">Productos</a></li>
             </ul>
             <img src="assets/fotos/carrito.png" class="carrito">
         </nav>
-        
+    </header>
+    <header class="header">
+        <img class="logo" src="assets/fotos/logo-west.png" alt="">
+        <nav>
+            <ul class="nav__UL">
+                <li class="nav__link"><a href="#hero"><span>Home</span></a></li>
+                <li class="nav__link"><a href="#info">Nosotros</a></li>
+                <li class="nav__link"><a href="#call-to-action">Conocenos</a></li>
+                <li class="nav__link"><a href="#products">Productos</a></li>
+            </ul>
+            <img src="assets/fotos/carrito.png" class="carrito">
+        </nav>
     </header>
     <main>
     <section id="hero">
@@ -41,7 +55,7 @@
         <h2>El mejor servicio personalizado</h2>
         <p>Conoce nuestras oficinas para llevarte un asesoramiento para vos totalmente gratis </p>
     </section>
-    <section class="call-to-action">
+    <section id="call-to-action">
         <p class="cta-title">Compra en instantes y recibi sin moverte de tu casa</p>
         <div class="cta-card-container">
             <div class="cta-card">
@@ -49,7 +63,7 @@
                 <h3>Selecciona el equipo de tus sueños</h3>
                 <p>Elegi modelo, color, capacidad y accesorios sin cargo. todo eso <span>AL MEJOR PRECIO</span></p>
             </div>
-            <div class="cta-card">
+            <div class="cta-card medio">
                 <img src="assets/fotos/2.png" alt="">
                 <h3>Carga tus datos para el envio y despreocupate</h3>
                 <p>Recorda que tenemos envio <span>SIN CARGO</span> a todo el pais, los 365 dias del año, las 24 horas del dia.</p>
@@ -61,7 +75,7 @@
             </div>
         </div>
     </section>
-    <section class="products">
+    <section id="products">
         <p class="prod-title">Conoce todos nuestros productos</p>
         <div class="btn-container">
             <button class="bnt-category active">
@@ -172,6 +186,112 @@
                 </div>
             </div>
         </div>
+
+
+
+        <!-- PROD TABLET-->
+
+        <div class="prod-container-tablet">
+            <div class="FL">
+            <div class="prod-card">
+                <div class="prod-gral">
+                <p>Iphone 12</p>
+                <img src="assets/fotos/products/iphone-12.png" class="prod-img doce" alt="Iphone12">
+                </div>
+                <div class="prod-info">
+                    <div>
+                        <p class="first-line">Disponible en:</p>
+                        <p>Blanco, rojo, midnight, blue</p>
+                    </div>
+                    <div>
+                        <p class="first-line">Capacidades:</p>
+                        <p>128gb, 256gb, 512gb</p>
+                    </div>
+                    <div class="first-line">
+                        Desde: 650Usd
+                    </div>
+                    <div class="btn-container">
+                        <div class="prod-btn buy">Comprar</div>
+                        <div class="prod-btn">Conoce Mas</div>
+                        </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <div class="prod-gral">
+                <p>Iphone 13</p>
+                <img src="assets/fotos/products/iphone-13.png" class="prod-img trece" alt="Iphone13">
+                </div>
+                <div class="prod-info">
+                    <div>
+                        <p class="first-line">Disponible en colores:</p>
+                        <p>Blanco, Midnight, Blue</p>
+                    </div>
+                    <div>
+                        <p class="first-line">Capacidades:</p>
+                        <p>128gb, 256gb, 512gb</p>
+                    </div>
+                    <div class="first-line">
+                        Desde: 720Usd
+                    </div>
+                    <div class="btn-container">
+                        <div class="prod-btn buy">Comprar</div>
+                        <div class="prod-btn">Conoce Mas</div>
+                        </div>
+                </div>
+            </div>
+            </div>
+        </div>
+            <div class="SL">
+            <div class="prod-card">
+                <div class="prod-gral">
+                    <p>Iphone 14</p>
+                <img src="assets/fotos/products/iphone-14.png" class="prod-img catorce" alt="Iphone14">
+                </div>
+                <div class="prod-info">
+                    <div>
+                        <p class="first-line">Disponible en colores:</p>
+                        <p>Midnight, Blue, Pink</p>
+                    </div>
+                    <div>
+                        <p class="first-line">Capacidades:</p>
+                        <p>128gb, 256gb, 512gb</p>
+                    </div>
+                    <div class="first-line">
+                        Desde: 800Usd
+                    </div>
+                    <div class="btn-container">
+                        <div class="prod-btn buy">Comprar</div>
+                        <div class="prod-btn">Conoce Mas</div>
+                        </div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <div class="prod-gral">
+                <p>Iphone 15</p>
+                <img src="assets/fotos/products/iphone-15.png" class="prod-img quince" alt="Iphone15">
+                </div>
+                <div class="prod-info">
+                    <div>
+                        <p class="first-line">Disponible en colores:</p>
+                        <p>Pink, Red, Violet</p>
+                    </div>
+                    <div>
+                        <p class="first-line">Capacidades:</p>
+                        <p>128gb, 256gb, 512gb</p>
+                    </div>
+                    <div class="first-line">
+                        Desde: 900Usd
+                    </div>
+                    <div class="btn-container">
+                        <div class="prod-btn buy">Comprar</div>
+                        <div class="prod-btn">Conoce Mas</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--FIN PROD TABLET-->
         <a href="#" class="more">Mostrar mas</a>
     </section>
 </main>
